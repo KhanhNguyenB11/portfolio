@@ -24,8 +24,8 @@ function AboutPage() {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             <p>
               Hello, and welcome to my portfolio! My name is Nguyen Tuan Anh
-              Khanh, and I'm delighted to share a glimpse into my journey with
-              you.
+              Khanh, and I&apos;m delighted to share a glimpse into my journey
+              with you.
             </p>
 
             <p>
@@ -45,7 +45,7 @@ function AboutPage() {
 
             <p>
               Upon completing my formal education, I embarked on a professional
-              path driven by a passion for web development. Over the years, I've
+              path driven by a passion for web development. Over the years, I&apos;ve
               had the privilege of working with diverse teams and engaging in
               projects that have enriched my understanding and expertise.
             </p>
@@ -64,10 +64,10 @@ function AboutPage() {
             </p>
 
             <p>
-              In my journey thus far, I've encountered challenges, celebrated
-              victories, and embraced moments of growth. Each experience has
-              shaped me into the individual I am today—a lifelong learner, a
-              creative thinker, and a dedicated professional.
+              In my journey thus far, I&apos;ve encountered challenges,
+              celebrated victories, and embraced moments of growth. Each
+              experience has shaped me into the individual I am today—a lifelong
+              learner, a creative thinker, and a dedicated professional.
             </p>
 
             <p>
@@ -88,7 +88,7 @@ function AboutPage() {
 
             <p>
               Thank you for visiting my portfolio and have a great day!
-              &#128516; &#128516; &#128516;{" "}
+              &#128516; &#128516; &#128516;
             </p>
 
             {/* sign svg */}
@@ -102,7 +102,10 @@ function AboutPage() {
             </div>
           </div>
           {/* Skills */}
-          <div className="flex flex-col justify-center gap-12 pb-12" ref={skillsRef}>
+          <div
+            className="flex flex-col justify-center gap-12 pb-12"
+            ref={skillsRef}
+          >
             <motion.h1
               initial={{ x: "-300px" }}
               animate={isSkillsRefInView ? { x: 0 } : {}}
@@ -115,7 +118,6 @@ function AboutPage() {
             <motion.div
               initial={{ x: "-300px" }}
               animate={isSkillsRefInView ? { x: 0 } : {}}
-              
               className="flex gap-4 flex-wrap lg:justify-start justify-center "
             >
               <div className="relative flex h-[50px] w-40 rounded items-center justify-center overflow-hidden bg-black text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-white before:duration-500 before:ease-out hover:shadow-amber-400 hover:text-black hover:before:h-56 hover:before:w-56 group">

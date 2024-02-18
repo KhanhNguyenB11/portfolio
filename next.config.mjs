@@ -3,7 +3,7 @@ const nextConfig = {
     images:{
         remotePatterns:[{
             protocol: 'https',
-            hostname: 'mongodb-js.github.io',
+            hostname: 'cdn-icons-png.flaticon.com',
         },{
             protocol: 'https',
             hostname: 'upload.wikimedia.org',

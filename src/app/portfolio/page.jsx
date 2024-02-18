@@ -75,9 +75,9 @@ function PortfolioPage() {
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
-                  <button className="relative flex h-[50px] w-40 rounded items-center justify-center overflow-hidden bg-black text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-white before:duration-500 before:ease-out hover:shadow-white hover:text-black hover:before:h-56 hover:before:w-56">
-            <span className="relative z-2">See demo</span>
-          </button>
+                    <button className="relative flex h-[50px] w-40 rounded items-center mb-8 justify-center overflow-hidden bg-black text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-white before:duration-500 before:ease-out hover:shadow-white hover:text-black hover:before:h-56 hover:before:w-56">
+                      <span className="relative z-2">See demo</span>
+                    </button>
                   </Link>
                 </div>
               </div>
@@ -102,7 +102,7 @@ function PortfolioPage() {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Fullstack Developer and a hardworker
+                Fullstack Developer and a Hardworker
               </textPath>
             </text>
           </motion.svg>

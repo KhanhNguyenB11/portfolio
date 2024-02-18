@@ -87,7 +87,7 @@ function Navbar() {
       {/* menu */}
       <div>
         <div className="hidden md:flex gap-4">
-          <Link href="">
+          <Link href="https://github.com/KhanhNguyenB11">
             <Image
               src="/github.png"
               alt="github_logo"
@@ -95,7 +95,7 @@ function Navbar() {
               height={25}
             ></Image>
           </Link>
-          <Link href="">
+          <Link href="https://www.facebook.com/harry.nguyen.180410">
             <Image
               src="/facebook.png"
               alt="github_logo"
