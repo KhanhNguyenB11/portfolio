@@ -22,7 +22,7 @@ function TransitionProvider({ children }) {
           initial={{ visibility: true }}
           animate={{ opacity: 0 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           {pathName=== "/" ? "HOME" : pathName.substring(1).toUpperCase()}
         </motion.div>

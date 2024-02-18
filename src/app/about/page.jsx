@@ -1,10 +1,12 @@
 "use client";
 import React, { useRef } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion, useInView, useScroll } from "framer-motion";
 import Image from "next/image";
 import Brain from "../components/Brain";
 function AboutPage() {
   const containerRef = useRef();
+  const skillsRef = useRef();
+  const isSkillsRefInView = useInView(skillsRef, { once: true });
   const { scrollYProgress } = useScroll({ container: containerRef });
   return (
     <motion.div
@@ -56,9 +58,9 @@ function AboutPage() {
 
             <p>
               In addition to my professional pursuits, I am deeply passionate
-              about programming. I believe in the power
-              of hard working and strive to integrate them into both
-              my personal and professional life.
+              about programming. I believe in the power of hard working and
+              strive to integrate them into both my personal and professional
+              life.
             </p>
 
             <p>
@@ -84,19 +86,38 @@ function AboutPage() {
 
             <p>Warm regards,</p>
 
-            <p>Thank you for visiting my portfolio and have a great day! &#128516; &#128516; &#128516;  </p>
+            <p>
+              Thank you for visiting my portfolio and have a great day!
+              &#128516; &#128516; &#128516;{" "}
+            </p>
 
             {/* sign svg */}
             <div className="self-start">
-              <Image src={"/signature.svg"} alt="signature" width={185} height={77}></Image>
-
+              <Image
+                src={"/signature.svg"}
+                alt="signature"
+                width={185}
+                height={77}
+              ></Image>
             </div>
           </div>
           {/* Skills */}
-          <div className="flex flex-col justify-center pb-4">
-            <h1 className="font-bold text-2xl">SKILLS</h1>
+          <div className="flex flex-col justify-center gap-12 pb-12" ref={skillsRef}>
+            <motion.h1
+              initial={{ x: "-300px" }}
+              animate={isSkillsRefInView ? { x: 0 } : {}}
+              transition={{ delay: 0.2 }}
+              className="font-bold text-2xl"
+            >
+              SKILLS
+            </motion.h1>
             {/* Skills list */}
-            <div className="flex gap-4 flex-wrap lg:justify-start justify-center ">
+            <motion.div
+              initial={{ x: "-300px" }}
+              animate={isSkillsRefInView ? { x: 0 } : {}}
+              
+              className="flex gap-4 flex-wrap lg:justify-start justify-center "
+            >
               <div className="relative flex h-[50px] w-40 rounded items-center justify-center overflow-hidden bg-black text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-white before:duration-500 before:ease-out hover:shadow-amber-400 hover:text-black hover:before:h-56 hover:before:w-56 group">
                 <span className="relative z-2 group-hover:hidden">
                   JavaScript
@@ -156,11 +177,11 @@ function AboutPage() {
                 <span className="relative z-2 group-hover:hidden">MongoDB</span>
                 <Image
                   src={
-                    "https://mongodb-js.github.io/leaf/mongodb-leaf_512x512@2x.png"
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png"
                   }
                   alt="JavaScript image"
-                  width={25}
-                  height={25}
+                  width={85}
+                  height={85}
                   className="relative z-2 ml-2 group-hover:block hidden"
                 ></Image>
               </div>
@@ -215,7 +236,7 @@ function AboutPage() {
                   className="relative z-2 ml-2 group-hover:block hidden"
                 ></Image>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
         {/* SVG */}

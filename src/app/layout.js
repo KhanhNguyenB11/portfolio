@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="md:overflow-hidden">
+      <body className={inter.className}>
         <TransitionProvider>{children}</TransitionProvider>
       </body>
     </html>
