@@ -126,7 +126,7 @@ function AboutPage() {
                 </span>
                 <Image
                   src={
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
+                    "/JavaScript-logo.png"
                   }
                   alt="JavaScript image"
                   width={25}
@@ -140,9 +140,9 @@ function AboutPage() {
                 </span>
                 <Image
                   src={
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                    "/React-icon.svg.png"
                   }
-                  alt="JavaScript image"
+                  alt="React image"
                   width={25}
                   height={25}
                   className="relative z-2 ml-2 group-hover:block hidden"
@@ -152,9 +152,9 @@ function AboutPage() {
                 <span className="relative z-2 group-hover:hidden">Next.js</span>
                 <Image
                   src={
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/394px-Nextjs-logo.svg.png"
+                    "/Nextjs-logo.svg.png"
                   }
-                  alt="JavaScript image"
+                  alt="Nextjs image"
                   width={75}
                   height={75}
                   className="relative z-2 ml-2 group-hover:block hidden"
@@ -166,9 +166,9 @@ function AboutPage() {
                 </span>
                 <Image
                   src={
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png?20230715030042"
+                    "/Tailwind_CSS_Logo.svg.png"
                   }
-                  alt="JavaScript image"
+                  alt="Tailwind CSS image"
                   width={25}
                   height={25}
                   className="relative z-2 ml-2 group-hover:block hidden"
@@ -179,9 +179,9 @@ function AboutPage() {
                 <span className="relative z-2 group-hover:hidden">MongoDB</span>
                 <Image
                   src={
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png"
+                    "/MongoDB_Logo.svg.png"
                   }
-                  alt="JavaScript image"
+                  alt="MongoDB image"
                   width={85}
                   height={85}
                   className="relative z-2 ml-2 group-hover:block hidden"
@@ -192,7 +192,7 @@ function AboutPage() {
                 <span className="relative z-2 group-hover:hidden">MySQL</span>
                 <Image
                   src={
-                    "https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png"
+                    "/Mysql_logo.png"
                   }
                   alt="JavaScript image"
                   width={50}
@@ -204,9 +204,9 @@ function AboutPage() {
                 <span className="relative z-2 group-hover:hidden">Node.js</span>
                 <Image
                   src={
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
+                    "/Node.js_logo.svg"
                   }
-                  alt="JavaScript image"
+                  alt="Nodejs image"
                   width={50}
                   height={50}
                   className="relative z-2 ml-2 group-hover:block hidden"
@@ -218,9 +218,9 @@ function AboutPage() {
                 </span>
                 <Image
                   src={
-                    "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
+                    "/Expressjs.png"
                   }
-                  alt="JavaScript image"
+                  alt="Expressjs image"
                   width={70}
                   height={70}
                   className="relative z-2 ml-2 group-hover:block hidden"
@@ -230,9 +230,9 @@ function AboutPage() {
                 <span className="relative z-2 group-hover:hidden">Spring</span>
                 <Image
                   src={
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Spring_Framework_Logo_2018.svg/2560px-Spring_Framework_Logo_2018.svg.png"
+                    "/2560px-Spring_Framework_Logo_2018.svg.png"
                   }
-                  alt="JavaScript image"
+                  alt="Spring image"
                   width={75}
                   height={75}
                   className="relative z-2 ml-2 group-hover:block hidden"

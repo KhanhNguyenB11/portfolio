@@ -112,7 +112,7 @@ const ContactPage = () => {
               <span className="relative z-2">Sending ...</span>
             )}
             <Image
-              src={"https://cdn-icons-png.flaticon.com/512/3106/3106794.png"}
+              src={"/3106794.png"}
               alt="JavaScript image"
               width={50}
               height={50}
