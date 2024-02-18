@@ -7,6 +7,6 @@ export default function myImageLoader({ src, width, quality }) {
       return src; // Return the src URL as is if it starts with any of the external hosts
   } else {
       // Modify the src URL by adding width and quality parameters
-      return `https://khanhportfolio.com/${src}?w=${width}&q=${quality || 75}`;
+      return `https://khanhnguyen-pi.vercel.app/${src}?w=${width}&q=${quality || 75}`;
   }
 }
