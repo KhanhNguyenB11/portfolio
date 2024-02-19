@@ -204,7 +204,7 @@ function AboutPage() {
                 <span className="relative z-2 group-hover:hidden">Node.js</span>
                 <Image
                   src={
-                    "/Node.js_logo.svg"
+                    "/nodejs_logo.png"
                   }
                   alt="Nodejs image"
                   width={50}
